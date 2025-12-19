@@ -103,7 +103,7 @@ export const translations = {
     ],
 
     // Thoughts section
-    recentThoughts: "Pensamientos Recientes",
+    recentThoughts: "Proyectos Destacados",
     readMore: "Ver Código",
     projects: [
       {
