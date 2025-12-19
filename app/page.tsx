@@ -41,7 +41,7 @@ function HomeContent() {
 
   return (
     <div className="min-h-screen bg-background text-foreground relative">
-      <header className="fixed top-0 left-0 right-0 z-20 px-6 sm:px-8 lg:px-16 py-4">
+      <header className="fixed top-0 left-0 right-0 z-20 px-6 sm:px-8 lg:px-16 py-4 bg-background/80 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto flex justify-end">
           <LanguageToggle />
         </div>
@@ -49,7 +49,7 @@ function HomeContent() {
 
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
         <div className="flex flex-col gap-4">
-          {["intro", "work", "thoughts", "connect"].map((section) => (
+          {["intro", "work", "projects", "connect"].map((section) => (
             <button
               key={section}
               onClick={() => document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })}
@@ -75,18 +75,27 @@ function HomeContent() {
               <div className="space-y-3 sm:space-y-2">
                 <div className="text-sm text-muted-foreground font-mono tracking-wider">{t.portfolioYear}</div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
-                  Felix
+                  Erick
                   <br />
-                  <span className="text-muted-foreground">Macaspac</span>
+                  <span className="text-muted-foreground">Fierro</span>
                 </h1>
               </div>
 
               <div className="space-y-6 max-w-md">
                 <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                  {t.heroDescription}
-                  <span className="text-foreground">{t.design}</span>,
-                  <span className="text-foreground">{t.technology}</span>, {t.and}
-                  <span className="text-foreground">{t.userExperience}</span>.
+                  {t.heroDescription[0]}{" "}
+                  <span className="text-foreground font-medium">
+                    {t.heroDescription[1]}
+                  </span>{" "}
+                  {t.heroDescription[2]}{" "}
+                  <span className="text-foreground font-medium">
+                    {t.heroDescription[3]}
+                  </span>{" "}
+                  {t.heroDescription[4]}{" "}
+                  <span className="text-foreground font-medium">
+                    {t.heroDescription[5]}
+                  </span>{" "}
+                  {t.heroDescription[6]}
                 </p>
 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
@@ -112,7 +121,7 @@ function HomeContent() {
               <div className="space-y-4">
                 <div className="text-sm text-muted-foreground font-mono">{t.focus}</div>
                 <div className="flex flex-wrap gap-2">
-                  {["HubL", "React", "TypeScript", "HubSpot CMS", "Node.js"].map((skill) => (
+                  {["COBOL (Online/Batch)", "JCL", "IBM DB2", "VSAM", "z/OS (ISPF)", "CICS", "SQL", "Java", "Python", "Git"].map((skill) => (
                     <span
                       key={skill}
                       className="px-3 py-1 text-xs border border-border rounded-full hover:border-muted-foreground/50 transition-colors duration-300"
@@ -160,7 +169,7 @@ function HomeContent() {
                   </div>
 
                   <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
-                    {["React", "TypeScript", "Next.js"].map((tech) => (
+                    {job.stack?.map((tech) => (
                       <span
                         key={tech}
                         className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
@@ -176,7 +185,7 @@ function HomeContent() {
         </section>
 
         <section
-          id="thoughts"
+          id="projects"
           ref={(el) => {
             sectionsRef.current[2] = el
           }}
@@ -186,22 +195,25 @@ function HomeContent() {
             <h2 className="text-3xl sm:text-4xl font-light">{t.recentThoughts}</h2>
 
             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
-              {t.posts.map((post, index) => (
-                <article
+              {t.projects.map((project, index) => (
+                <a
                   key={index}
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
                 >
                   <div className="space-y-4">
                     <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
-                      <span>{post.date}</span>
-                      <span>{post.readTime}</span>
+                      <span>{project.date}</span>
+                      <span>{project.language}</span>
                     </div>
 
                     <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
-                      {post.title}
+                      {project.title}
                     </h3>
 
-                    <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
+                    <p className="text-muted-foreground leading-relaxed">{project.description}</p>
 
                     <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                       <span>{t.readMore}</span>
@@ -220,7 +232,7 @@ function HomeContent() {
                       </svg>
                     </div>
                   </div>
-                </article>
+                </a>
               ))}
             </div>
           </div>
@@ -242,10 +254,10 @@ function HomeContent() {
 
                 <div className="space-y-4">
                   <Link
-                    href="mailto:test@example.com"
+                    href="mailto:fierroperdomoerickstiven@gmail.com"
                     className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
                   >
-                    <span className="text-base sm:text-lg">test@example.com</span>
+                    <span className="text-base sm:text-lg">Email</span>
                     <svg
                       className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
                       fill="none"
@@ -264,10 +276,8 @@ function HomeContent() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { name: "GitHub", handle: "@felixmacaspac", url: "#" },
-                  { name: "v0.dev", handle: "@felixmacaspac", url: "#" },
-                  { name: "HubSpot Community", handle: "@felixmacaspac", url: "#" },
-                  { name: "LinkedIn", handle: "felixmacaspac", url: "#" },
+                  { name: "GitHub", handle: "@erickfierro", url: "https://github.com/erickfierro" },
+                  { name: "LinkedIn", handle: "Erick Stiven Fierro", url: "https://www.linkedin.com/in/erick-stiven-fierro/" }
                 ].map((social) => (
                   <Link
                     key={social.name}

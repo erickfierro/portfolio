@@ -5,78 +5,54 @@ export const translations = {
     // Header
     portfolioYear: "PORTFOLIO / 2025",
     availableForWork: "Available for work",
-    location: "Philippines",
+    location: "Colombia",
     currently: "CURRENTLY",
-    position: "Frontend Developer",
-    company: "@ Hububble",
-    years: "2021 — Present",
+    position: "COBOL Developer",
+    company: "@ Banco de Bogota",
+    years: "2024 — Present",
     focus: "FOCUS",
 
     // Hero description
-    heroDescription: "Frontend Developer crafting digital experiences at the intersection of",
-    design: " design",
-    technology: " technology",
-    userExperience: " user experience",
-    and: "and",
+    heroDescription: ["Software Developer at the intersection of", "Legacy systems", "and", "modern technology.", "Expert in", "robust COBOL logic", "with a modern vision for tech evolution."],
 
     // Work section
-    selectedWork: "Selected Work",
-    workYears: "2019 — 2025",
+    selectedWork: "Professional Experience",
+    workYears: "2022 — 2025",
     jobs: [
       {
-        year: "2023",
-        role: "Senior Frontend Engineer",
-        company: "Vercel",
-        description: "Leading frontend architecture for developer tools and AI-powered features.",
+        year: "2024",
+        role: "COBOL Developer",
+        company: "Banco de Bogotá",
+        description: "Development of COBOL applications (Online and Batch). Efficient management of large data volumes using VSAM files and process automation via JCL in an IBM environment.",
+        stack: ["COBOL", "JCL", "CICS", "VSAM", "Mainframe"]
       },
       {
         year: "2022",
-        role: "Frontend Engineer",
-        company: "Linear",
-        description: "Built performant interfaces for project management and team collaboration.",
-      },
-      {
-        year: "2021",
-        role: "Full Stack Developer",
-        company: "Stripe",
-        description: "Developed payment infrastructure and merchant-facing dashboard features.",
-      },
-      {
-        year: "2019",
-        role: "Software Engineer",
-        company: "Airbnb",
-        description: "Created booking flow optimizations and host management tools.",
-      },
+        role: "Junior Software Engineer",
+        company: "NTT DATA",
+        description: "Coding, testing, and optimization of enterprise software modules. Resolution of critical errors and improvement of execution times in key processes.",
+        stack: ["COBOL", "JCL", "Mainframe", "DB2", "SQL", "Git"]
+      }
     ],
 
     // Thoughts section
-    recentThoughts: "Recent Thoughts",
-    readMore: "Read more",
-    posts: [
+    recentThoughts: "Featured Projects",
+    readMore: "View Code",
+    projects: [
       {
-        title: "The Future of Web Development",
-        excerpt: "Exploring how AI and automation are reshaping the way we build for the web.",
-        date: "Dec 2024",
-        readTime: "5 min",
+        title: "Portfolio Next.js",
+        description: "Modern personal website built with Next.js 14, Tailwind CSS, and TypeScript. Features internationalization and dark mode.",
+        date: "Dec 2025",
+        language: "TypeScript",
+        url: "https://github.com/erickfierro/portfolio"
       },
       {
-        title: "Design Systems at Scale",
-        excerpt: "Lessons learned from building and maintaining design systems across multiple products.",
-        date: "Nov 2024",
-        readTime: "8 min",
-      },
-      {
-        title: "Performance-First Development",
-        excerpt: "Why performance should be a first-class citizen in your development workflow.",
-        date: "Oct 2024",
-        readTime: "6 min",
-      },
-      {
-        title: "The Art of Code Review",
-        excerpt: "Building better software through thoughtful and constructive code reviews.",
-        date: "Sep 2024",
-        readTime: "4 min",
-      },
+        title: "Sales Statistics Calculator",
+        description: "Sales statistics calculator. It provides an efficient solution for calculating and analyzing sales data, allowing users to gain valuable insights into their product and sales performance.",
+        date: "Dec 2025",
+        language: "COBOL",
+        url: "https://github.com/erickfierro/cobol-sales-statistics-calculator"
+      }
     ],
 
     // Connect section
@@ -86,8 +62,8 @@ export const translations = {
     elsewhere: "ELSEWHERE",
 
     // Footer
-    copyright: "© 2025 Felix Macaspac. All rights reserved.",
-    builtWith: "Built with v0.dev by Felix Macaspac",
+    copyright: "© 2025 Erick Fierro. All rights reserved.",
+    builtWith: "Built with Next.js & Tailwind CSS",
 
     // Navigation
     navigateTo: "Navigate to",
@@ -96,79 +72,54 @@ export const translations = {
     // Header
     portfolioYear: "PORTAFOLIO / 2025",
     availableForWork: "Disponible para trabajar",
-    location: "Filipinas",
+    location: "Colombia",
     currently: "ACTUALMENTE",
-    position: "Desarrollador Frontend",
-    company: "@ Hububble",
-    years: "2021 — Presente",
+    position: "Desarrollador COBOL",
+    company: "@ Banco de Bogotá",
+    years: "2024 — Presente",
     focus: "ENFOQUE",
 
     // Hero description
-    heroDescription: "Desarrollador Frontend creando experiencias digitales en la intersección de",
-    design: " diseño",
-    technology: " tecnología",
-    userExperience: " experiencia de usuario",
-    and: "y",
+    heroDescription: ["Desarrollador de Software en la intersección entre", "sistemas Legacy", "y", "tecnología moderna.", "Experto en", "lógica COBOL robusta", "con una visión actual para la evolución tecnológica."],
 
     // Work section
-    selectedWork: "Trabajo Seleccionado",
-    workYears: "2019 — 2025",
+    selectedWork: "Experiencia Profesional",
+    workYears: "2022 — 2025",
     jobs: [
       {
-        year: "2023",
-        role: "Ingeniero Frontend Senior",
-        company: "Vercel",
-        description: "Liderando arquitectura frontend para herramientas de desarrollo y funciones con IA.",
+        year: "2024",
+        role: "COBOL Developer",
+        company: "Banco de Bogotá",
+        description: "Desarrollo de aplicaciones COBOL (Online y Batch). Gestión eficiente de grandes volúmenes de datos con archivos VSAM y automatización de procesos mediante JCL en entorno IBM.",
+        stack: ["COBOL", "JCL", "CICS", "VSAM", "Mainframe"]
       },
       {
         year: "2022",
-        role: "Ingeniero Frontend",
-        company: "Linear",
-        description: "Construí interfaces de alto rendimiento para gestión de proyectos y colaboración en equipo.",
-      },
-      {
-        year: "2021",
-        role: "Desarrollador Full Stack",
-        company: "Stripe",
-        description: "Desarrollé infraestructura de pagos y funciones del panel de comerciantes.",
-      },
-      {
-        year: "2019",
-        role: "Ingeniero de Software",
-        company: "Airbnb",
-        description: "Creé optimizaciones de flujo de reservas y herramientas de gestión para anfitriones.",
-      },
+        role: "Junior Software Engineer",
+        company: "NTT DATA",
+        description: "Codificación, pruebas y optimización de módulos de software empresarial. Resolución de errores críticos y mejora de tiempos de ejecución en procesos clave.",
+        stack: ["COBOL", "JCL", "Mainframe", "DB2", "SQL", "Git"]
+      }
     ],
 
     // Thoughts section
     recentThoughts: "Pensamientos Recientes",
-    readMore: "Leer más",
-    posts: [
+    readMore: "Ver Código",
+    projects: [
       {
-        title: "El Futuro del Desarrollo Web",
-        excerpt:
-          "Explorando cómo la IA y la automatización están transformando la forma en que construimos para la web.",
-        date: "Dic 2024",
-        readTime: "5 min",
+        title: "Portafolio Next.js",
+        description: "Sitio web personal moderno construido con Next.js 14, Tailwind CSS y TypeScript. Incluye internacionalización y modo oscuro.",
+        date: "Dec 2025",
+        language: "TypeScript",
+        url: "https://github.com/erickfierro/portfolio"
       },
       {
-        title: "Sistemas de Diseño a Escala",
-        excerpt: "Lecciones aprendidas construyendo y manteniendo sistemas de diseño en múltiples productos.",
-        date: "Nov 2024",
-        readTime: "8 min",
-      },
-      {
-        title: "Desarrollo Enfocado en Rendimiento",
-        excerpt: "Por qué el rendimiento debe ser una prioridad en tu flujo de trabajo de desarrollo.",
-        date: "Oct 2024",
-        readTime: "6 min",
-      },
-      {
-        title: "El Arte de la Revisión de Código",
-        excerpt: "Construyendo mejor software a través de revisiones de código reflexivas y constructivas.",
-        date: "Sep 2024",
-        readTime: "4 min",
-      },
+        title: "Calculadora De Estadísticas De Ventas",
+        description: "Calculadora de estadísticas de ventas. Ofrece una solución eficiente para calcular y analizar datos de ventas, lo que permite a los usuarios obtener información valiosa sobre el rendimiento de sus productos y ventas.",
+        date: "Dec 2025",
+        language: "COBOL",
+        url: "https://github.com/erickfierro/cobol-sales-statistics-calculator"
+      }
     ],
 
     // Connect section
@@ -178,8 +129,8 @@ export const translations = {
     elsewhere: "EN OTROS LUGARES",
 
     // Footer
-    copyright: "© 2025 Felix Macaspac. Todos los derechos reservados.",
-    builtWith: "Construido con v0.dev por Felix Macaspac",
+    copyright: "© 2025 Erick Fierro. Todos los derechos reservados.",
+    builtWith: "Construido con Next.js & Tailwind CSS",
 
     // Navigation
     navigateTo: "Navegar a",
